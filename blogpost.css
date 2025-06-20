@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&family=Miniver&family=Noto+Sans+Georgian:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+.page-wrapper{
+    min-height: 100vh;
+}
+
+.content{
+    width: 90%;
+    margin: 30px auto 30px;
+}
+.content .main-content{
+    width: 70%;
+}
+
+
+.content .main-content .post {
+    width: 95%;
+    height: fit-content;
+    background: rgb(255, 255, 255);
+    
+    margin: 20px auto;
+    position: relative;
+    
+    color: rgb(43, 26, 26);
+    /* padding: 1em; */
+    
+   
+}
+
+.content .main-content .post p{
+    color: black;
+    text-align: left;
+    padding: 8px 25px;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    line-height: 59px;
+    letter-spacing: -0.03em;
+}
+
+.content .main-content .sidebar{
+    width: 30%;
+}
+
+.content .main-content .title{
+    text-align: center;
+
+}
+.sidebar .popular-topics .topic{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin-top: 15px;
+
+}
+
+
+.sidebar .popular-topics .topic .section-content{
+    background-color: #e2d3d3;
+    padding: 10px;
+    
+    
+    
+}
+.sidebar .popular-topics .topic .section-content p{
+    margin-top: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+ .topic .section-content p a{
+    color: black;
+}
+
+.sidebar .popular-topics .topic .section-image img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.sidebar .popular-topics .title{
+    text-align: center;
+}
+
+@media screen and (max-width:900px){
+
+.content .main-content{
+    width: 100%;
+}
+
+}
+
+
+
+/* BLOG POST IMAGES STYLING */
+.main-content .post .post-image {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.main-content .post .post-image img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0;
+    margin-top: 5px;
+}
+.main-content .post #img2 img{
+    float: left;
+    width: 300px;
+    height: 185px;
+    object-fit: cover;
+    margin: 0 7px 0 25px;
+    border-radius: 0;
+
+}
+
+font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;

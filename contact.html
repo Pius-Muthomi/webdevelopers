@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font AWESOME CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Muthomi Pius</title>
+</head>
+<body>
+    <!-- Header section -->
+     <header>
+        <nav class="navbar">
+                <a href="index.html" class="nav-logo">
+                    <h2 class="logo-text">☕ <span>Mut</span>Homi</h2>
+                </a>
+                <ul class="nav-menu">
+                    <i id="menu-close-button" class="fa-solid fa-x"></i>
+                    <li class="nav-item">
+                        <a href="carousel.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="skills.html" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Portfolio &nbsp; <i class="fa-solid fa-caret-down" style="color: white;"></i> </a>
+                        <div class="dropdown-menu">
+                                <ul>
+                                    <li> <a href="#">Web Design</a>
+                                    </li>
+                                    <li> <a href="#">Nursing Services</a>
+                                    </li>
+                                    <li> <a href="#">Research</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </li>
+                      <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blogs</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <i id="menu-open-button"  class="fa-solid fa-bars"></i>
+          
+          
+        </nav>
+
+     </header>
+     <!-- CONTACT ME -->
+    <div class="contact-section">
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-left"> 
+                <div class="contact-details">
+                    <p class="email"><i class="fa-solid fa-paper-plane" style="color: #1E90FF;"></i> muthomigpius@gmail.com</p>
+                    <p class="phone"> <i class="fa-solid fa-phone-volume" style="color: #28a745;"></i> +254 794 886 201 /+254 753 644 221</p>
+                    <p class="website"><i class="fa-solid fa-globe" style="color: #0a66c2;"></i> www.muthomipius.com</p>
+                    <div class="socials">
+                        <a href="#" class="social-link" style="color: #25D366;"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="" class="social-link"><i class="fa-brands fa-facebook" style="color: #1877F2;"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram" style="background-color: #E4405F; background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4); border-radius: 5px;"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin" style="color: #0A66C2;"></i></a>
+                        <a href="#" class="social-link" style="color: #1DA1F2 ;"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <button class="my-cv" onclick="downloadCV()">Download CV</button>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"> 
+                    <input type="text" class="name" name="Name" placeholder="Your name..." required>
+                    <input type="email" class="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" id="" rows="6" class="message" placeholder="Your message..."></textarea>
+                    <button type="submit" class="submit-button">Send</button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+<footer class="footer-section">
+    <div class="section-content">
+        <div class="footer-column">
+        <div class="footer-left">
+            <a href="index.html" class="nav-logo">
+                    <h2 class="logo-text">☕ <span>Mut</span>Homi</h2>
+            </a>
+            <p class="bio">   Passionate about building responsive, accessible, and human-centered web experiences.
+    Bridging technology and healthcare to create solutions that serve both users and patients.</p>
+            <div class="contacts">
+                <p class="email"><i class="fa-solid fa-paper-plane" style="color: #1E90FF;"></i> <a href="muthomigpius@gmail.com">muthomigpius@gmail.com</a></p>
+                <p class="phone">  
+                    <span class="phone-numbers">
+                        <span class="number"><i class="fa-solid fa-phone-volume" style="color: #28a745;"></i> +254 794 886 201</span> &nbsp;&nbsp;
+                        <span class="number"><i class="fa-solid fa-phone-volume" style="color: #a73728;"></i> +254 753 644 221</span>
+                    </span>
+                </p>              
+                <p class="website"><i class="fa-solid fa-globe" style="color: #0a66c2;"></i> <a href="www.muthomipius.com">www.muthomipius.com</a></p>
+            </div>
+
+        </div>
+        <div class="footer-middle">
+            <div class="foot-nav">
+                <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio.html" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+        </div>
+        <div class="footer-right">
+            <div class="details">
+                <div class="newsletter">
+                    <h3>Subscribe to My Newsletter</h3>
+                    <p>Get updates delivered to your inbox every week</p>
+                    <form id="newsletter-form" action="">
+                        <label for="">Email adress</label>
+                        <input type="text" id="email" required>
+                        <button type="submit" id="submit-btn">Submit</button>
+                    </form>
+                </div>
+                
+                <div class="socials">
+                        <a href="#" class="social-link" style="color: #25D366;"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="" class="social-link"><i class="fa-brands fa-facebook" style="color: #1877F2;"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram" style="background-color: #E4405F; background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4); border-radius: 5px;"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin" style="color: #0A66C2;"></i></a>
+                        <a href="#" class="social-link" style="color: #1DA1F2 ;"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        <div class="copyright" id="copyright">
+           
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
