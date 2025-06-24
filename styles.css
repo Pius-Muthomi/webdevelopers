@@ -167,7 +167,7 @@ header{
 section.hero-section {
     background: var(--primary-color);
     height: 100vh;
-    background: url(images\Carousel\photo-1509100194014-d49809396daa.avif) no-repeat;
+    background: url(images/Backgrounds/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
