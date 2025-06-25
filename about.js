@@ -25,3 +25,4 @@ function typeCharacter() {
 }
 
 window.onload = typeCharacter;
+

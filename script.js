@@ -114,3 +114,27 @@ $('.post-wrapper').slick({
     // instead of a settings object
   ]
 });
+
+
+
+const text = 'Save up to 50% developer charges. Scale your business on a global scale for less';
+
+const typingTextElement = document.getElementById('home-contact-quote');
+let index = 0;
+function typeCharacter (){
+    if(index < text.length){
+        typingTextElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeCharacter, 50);
+    }
+    else {
+        // After typing is done, wait 2 seconds, then clear and restart
+        setTimeout(() => {
+            typingTextElement.textContent = '';
+            index = 0;
+            typeCharacter();
+        }, 10000); // 2000 ms = 2 seconds delay before restarting
+    }
+}
+
+window.onload = typeCharacter;
