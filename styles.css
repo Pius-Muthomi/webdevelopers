@@ -167,7 +167,7 @@ header{
 section.hero-section {
     background: var(--primary-color);
     height: 100vh;
-    background: url(images/Carousel/premium_photo-1678567672060-fb4eb9e6a004.avif) no-repeat;
+    background: url(images/Carousel/herosection.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
