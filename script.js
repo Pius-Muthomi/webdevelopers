@@ -81,7 +81,7 @@ document.getElementById("copyright").innerHTML = `&copy; ${year} Muthomi. All ri
 $('.post-wrapper').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 3000,
   nextArrow: $('.next'),
   prevArrow: $('.prev'),
