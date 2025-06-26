@@ -5,7 +5,7 @@ let listItem = document.querySelector('.carousel .list');
 let thumbnail = document.querySelector('.carousel .thumbnail');
 
 let timeRunning = 4000;      // Time for animation to complete
-let timeAutoNext = 7000;     // Time between auto slides
+let timeAutoNext = 5000;     // Time between auto slides
 let runTimeOut;
 let runAutoRun;
 
