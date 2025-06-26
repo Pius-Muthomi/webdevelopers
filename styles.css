@@ -1376,8 +1376,15 @@ footer.footer-section .section-content .copyright{
 }
 
 
-body.show-mobile-menu .navbar .nav-menu{
+/* Default (hidden) */
+.navbar .nav-menu {
     left: -300px;
+    transition: left 0.3s ease;
+}
+
+/* When menu is shown */
+body.show-mobile-menu .navbar .nav-menu {
+    left: 0;
 }
   body.show-mobile-menu header:before{
     
@@ -1389,7 +1396,9 @@ body.show-mobile-menu .navbar .nav-menu{
         backdrop-filter: blur(5px);
         background:rgba(0, 0, 0, 0.02);
     }
+/* MENU OVERLAY//////////////////////// */
 
+/* ////////////////////////////// */
 #menu-close-button, 
 #menu-open-button{
     font-size: var(--font-size-xl);
