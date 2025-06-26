@@ -133,7 +133,7 @@ function typeCharacter (){
             typingTextElement.textContent = '';
             index = 0;
             typeCharacter();
-        }, 10000); // 2000 ms = 2 seconds delay before restarting
+        }, 15000); // 2000 ms = 2 seconds delay before restarting
     }
 }
 
