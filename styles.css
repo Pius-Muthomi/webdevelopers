@@ -375,6 +375,14 @@ section.hero-section::after{
     margin: 30px auto;
     font-style: italic;
     font-weight: bolder;
+
+}
+@media screen and (max-width: 900px){
+    .post-slider .slider-title{
+        font-size: 1.2rem;
+        margin: 20px auto;
+    }
+    
 }
 .post-slider .prev {
     position: absolute;
