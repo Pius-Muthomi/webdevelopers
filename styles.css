@@ -323,10 +323,10 @@ section.hero-section::after{
         width: 100%;
         background-color: var(--secondary-color);
     }
-} {
+} 
 
     
-}
+
 @keyframes fadeQuoteIn {
     0% {
         opacity: 0;
@@ -923,7 +923,6 @@ section.hero-section::after{
 }
 .contact-content .contact-left .contact-details{
     align-items: center;
-    font-size: var(--font-size-m);
     font-weight: var(--font-weight-medium);
     margin-left: 50px;
     
@@ -1034,9 +1033,7 @@ span#msg{
     padding: 120px 20px;
     background: var(--primary-color);
 }
-.portfolio .portfolio-content {
 
-}
 .portfolio .portfolio-content .worklist {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
@@ -1149,9 +1146,7 @@ footer.footer-section .section-content .copyright{
     /* padding-top: 20px; */
     padding-left: 20px;
 }
-.section-content .footer-column .footer-middle{
-    /* padding-top: 20px;  */
-}
+
 .footer-left .nav-logo .logo-text{
     margin-bottom: 20px;
 }
@@ -1390,6 +1385,12 @@ body.show-mobile-menu .navbar .nav-menu{
     flex-direction: column;
     align-items: center;
 }
+.contact-section .title{
+    padding-top: 80px;
+}
+.contact-section .contact-content {
+    padding-top: 20px;
+}
 .contact-content .contact-left {
     width: 100%;
     /* margin-bottom: 20px; */
@@ -1398,11 +1399,17 @@ body.show-mobile-menu .navbar .nav-menu{
     align-items: center;
 
 }
+.contact-content .contact-left .contact-details{
+    margin-left: 0;
+}
+.contact-left .contact-details .email ,.phone, .website, .socials{
+    margin-bottom: 15px;
+    font-size: 13px;
+}
 .contact-details .socials{
     display: flex;
     gap: 53px;
     justify-content: center;
-    margin-bottom: 5px;
 }
 .contact-content .contact-right{
     width: 80%;
@@ -1455,7 +1462,7 @@ section {
 } 
 /* CONTACT PAGE */
 .contact-left .contact-details .email ,.phone, .website, .socials{
-    margin-bottom: 35px;
+    /* margin-bottom: px; */
 }
 
 /* PORTFOLIO */
@@ -1483,9 +1490,7 @@ section {
 }
 /* SLIDER HOME */
 @media screen and (max-width:650px){
-.portfolio .portfolio-content .worklist {
-    
-}
+
 }
 /* Footer */
 .footer-section .section-content .footer-column{
