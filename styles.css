@@ -947,8 +947,6 @@ section.hero-section::after{
     transform: scale(1.3);
 }
 .contact-left button.my-cv{
-    color: var(--primary-color);
-    background: var(--secondary-color);
     border-radius: 7px;
     font-weight: var(--font-weight-medium);
     border: 2px solid transparent;
@@ -956,7 +954,74 @@ section.hero-section::after{
     font-size: 14px;
     cursor: pointer;
     transition: 0.3s ease;
+
+
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #000000;
+  border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+ .contact-left button.my-cv:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+ .contact-left button.my-cv:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+} 
+
+
 .contact-left button.my-cv:hover{
     color: var(--white-color);
     background: var(--primary-color);
@@ -1010,7 +1075,7 @@ section.hero-section::after{
     background: var(--secondary-color);
     border-radius: 7px;
     font-weight: var(--font-weight-medium);
-    border: 2px solid transparent;
+    border: 2px solid black;
     padding: 8px 6px;
     font-size: 14px;
     cursor: pointer;
@@ -1404,15 +1469,16 @@ body.show-mobile-menu .navbar .nav-menu{
 }
 .contact-left .contact-details .email ,.phone, .website, .socials{
     margin-bottom: 15px;
-    font-size: 13px;
+    font-size: 15px;
 }
 .contact-details .socials{
     display: flex;
-    gap: 53px;
+    gap: 25px;
     justify-content: center;
 }
 .contact-content .contact-right{
     width: 80%;
+    margin-top: 25px;
 }
 .contact-left button.my-cv{
    display: block;
@@ -1420,6 +1486,7 @@ body.show-mobile-menu .navbar .nav-menu{
    width: 65%;
     
 }
+
 .contact-content .contact-right form{
     width: 100%;
     
@@ -1461,22 +1528,29 @@ section {
     border-radius: var(--border-radius-circle);
 } 
 /* CONTACT PAGE */
-.contact-left .contact-details .email ,.phone, .website, .socials{
-    /* margin-bottom: px; */
-}
 
 /* PORTFOLIO */
 .portfolio .portfolio-content .worklist {
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* FOOTER */
-
+/* CONTACT */
+.contact-left .contact-details .email ,.phone, .website, .socials{
+    gap: 30px;
+}
+.contact-left button.my-cv{
+    font-size: 14px;
+    width: 40%;
+}
+.contact-right form input, 
+.contact-right form textarea {
+    margin-bottom: 23px;
+    font-size: 1.1rem;
+    font-size: 12px;  
 }
 
 
-
-
+}
 /* ABOUT PAGE *//* ABOUT PAGE *//* ABOUT PAGE *//* ABOUT PAGE *//* ABOUT PAGE */
 
 @media screen and (max-width:650px){
