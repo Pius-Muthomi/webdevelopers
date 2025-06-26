@@ -293,6 +293,13 @@ section.hero-section::after{
     transform: translateY(20px);
     animation: fadeQuoteIn 1.5s ease-out forwards;
 }
+@media screen and (max-width: 900px){
+    .profile-quote{
+        width: 90%;
+        max-width: 100%;
+    }
+    
+}
 .profile-quote::after{
     content: '';
     display: block;
