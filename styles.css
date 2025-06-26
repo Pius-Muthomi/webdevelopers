@@ -518,7 +518,8 @@ section.hero-section::after{
 
 .home-contacts{
     margin: 150px auto;
-    background: url(images/Carousel/photo-1509100194014-d49809396daa.avif) no-repeat;
+    background: url(https://preview.redd.it/dnu6kxecwjr51.jpg?width=1080&crop=smart&auto=webp&s=f8e6d8445c43547918d1eaedbc29b74d2135a2ad) no-repeat;
+    /* background: url(images/Carousel/photo-1509100194014-d49809396daa.avif) no-repeat; */
     background-size: cover;
     background-position: center;
     filter: brightness(0.8);
