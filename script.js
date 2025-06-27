@@ -41,24 +41,24 @@ function downloadCV() {
 
 // SUBMIT TO GOOGLE FORM
 
-// const scriptURL = 'https://script.google.com/macros/s/AKfycbycTRcaOnUXiFlUqfkzx2T-_VI9wXCd416Z9nc7wfpJor8KTdCBiJC39VXjBmrARpHxmw/exec'
-//   const form = document.forms['submit-to-google-sheet']
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwlz_F6HiTaqZS5wmnGU4gLfMr7HzCQo5WDSEhXgnJnVMNsGaphv5FNY6tiWO5zVVBNnQ/exec'
+  const form = document.forms['submit-to-google-sheet']
 
-//   form.addEventListener('submit', e => {
-//     e.preventDefault()
-//     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-//       .then(response => {
-//         msg.innerHTML = "Message sent successfully!";
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!";
     
-//         setTimeout(function(){
-//             msg.innerHTML = ""
-//         }, 1000)
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 1000)
 
-//         form.reset()
-//       }
-//             )
-//       .catch(error => console.error('Error!', error.message))
-//   })
+        form.reset()
+      }
+            )
+      .catch(error => console.error('Error!', error.message))
+  })
 
 //   SUBMITTED TO GOOGLE FORM
 
