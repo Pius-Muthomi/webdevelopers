@@ -297,8 +297,9 @@
     }
     
 }
+/* and (orientation: landscape) */
 
-@media screen and (max-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 800px)  {
     /* .carousel{
         overflow: scroll;
         height: 200vh;
@@ -318,8 +319,8 @@
    bottom: 0px;
     }
     .thumbnail .item{
-        width: 100px;
-        height: 150px;
+        width: 50px;
+        height: 75px;
 
     }
     .thumbnail .item img{
@@ -354,7 +355,7 @@
     }
     .carousel .list .item .content {
         position: absolute;
-        top: 20%;
+        top: 13%;
         width: 1140px;
         max-width: 80%;
         left: 43%;
@@ -369,7 +370,7 @@
         font-size: 1.5em;
     }
     .thumbnail{
-        display: none;
+        /* display: none; */
     }
     .arrows{
         width: 100%;
@@ -378,13 +379,17 @@
     }
     
 }
-
-@media screen and (max-width: 500px) and (orientation: landscape){
-     .thumbnail .item{
+/* 
+@media screen and (max-width: 450px) and (orientation: landscape){
+    .thumbnail{
+        left: 82%;
+        bottom: 0px;
+    } 
+    .thumbnail .item{
         width: 100px;
         height: 100px;
     }
     .carousel .list .item .content .description{
         max-width: 100%;     
     }
-}
+} */
