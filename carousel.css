@@ -316,11 +316,11 @@
     .thumbnail{
     /* display: none; */
    position: absolute;
-   bottom: 0px;
+   bottom: 50px;
     }
     .thumbnail .item{
-        width: 50px;
-        height: 75px;
+        width: 66px;
+        height: 90px;
 
     }
     .thumbnail .item img{
