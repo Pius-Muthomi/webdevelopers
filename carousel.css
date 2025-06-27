@@ -316,7 +316,7 @@
     .thumbnail{
     /* display: none; */
    position: absolute;
-   bottom: 50px;
+   bottom: 85px;
     }
     .thumbnail .item{
         width: 66px;
