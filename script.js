@@ -117,23 +117,23 @@ $('.post-wrapper, .blog-post-wrapper').slick({
 
 
 
-const text = 'Save up to 50% developer charges. Scale your business on a global scale for less';
+const homeText = 'Save up to 50% developer charges. Scale your business on a global scale for less';
 
-const typingTextElement = document.getElementById('home-contact-quote');
-let index = 0;
+const typingHomeTextElement = document.getElementById('home-contact-quote');
+let value = 0;
 function typeCharacter (){
-    if(index < text.length){
-        typingTextElement.textContent += text.charAt(index);
-        index++;
+    if(value < homeText.length){
+        typingHomeTextElement.textContent += homeText.charAt (value);
+        value++;
         setTimeout(typeCharacter, 50);
     }
     else {
         // After typing is done, wait 2 seconds, then clear and restart
         setTimeout(() => {
-            typingTextElement.textContent = '';
-            index = 0;
+            typingHomeTextElement.textContent = '';
+          value = 0;
             typeCharacter();
-        }, 15000); // 2000 ms = 2 seconds delay before restarting
+        }, 15000000); // 2000 ms = 2 seconds delay before restarting
     }
 }
 

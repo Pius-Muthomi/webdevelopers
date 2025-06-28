@@ -715,34 +715,18 @@ section.hero-section::after{
     display: flex;
     flex-direction: column;
 } */
-.about-section{
-    background: white;
-    
-}
-.about-section .section-content{
+
+.page-wrapper{
+    height: 100%;
     display: flex;
-    padding-top: 100px;
-    
+    flex-direction: column;
 }
-.about-section .section-content .about-image-wrapper {
-    width: 30%;
-}
-.about-section .section-content .about-details{
-    width: 70%;
-}
-.about-section .section-content .about-image-wrapper .about-image{
-    width: 100%;
-    height: 450px;
-    border-radius: var(--border-radius-circle);
-    margin-left: 20px;
-    object-fit: cover;
-    margin: 100px 5px;
-}
-.about-details .title{
+.about-section .title{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
-.section-content .about-details .about-title{
+.about-section .about-title{
     font-size: var(--font-size-xxl);
     text-align: center;
     font-weight: var(--font-weight-bold);
@@ -751,7 +735,7 @@ section.hero-section::after{
     padding: 7px;
 }
 
-.section-content .about-details .about-title::before{
+.about-section  .about-title::before{
     content: "";
     background: var(--secondary-color);
     display: block;
@@ -763,7 +747,7 @@ section.hero-section::after{
     left: 0;
     bottom: 0;
 }
-.section-content .about-details .about-title::after{
+.about-section  .about-title::after{
     content: "";
     background: var(--secondary-color);
     display: block;
@@ -778,13 +762,75 @@ section.hero-section::after{
     bottom: -7px;
 }
 
+.about-section{
+    height: 100%;
+    background: white;
+    
+}
+.about-section .section-content{
+    display: flex;
+    
+}
 
+@media  screen and (max-width:900px){
+    .about-section .section-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.about-section .section-content .about-image-wrapper {
+    width: 30%;
+}
+.about-section .section-content .about-details{
+    width: 70%;
+}
+.about-section .section-content .about-image-wrapper .about-image{
+    width: 100%;
+    height: 450px;
+    border-radius: var(--border-radius-circle);
+    margin-left: 20px;
+    object-fit: cover;
+    margin: 100px 5px;
+}
+@media screen and (max-width: 900px){
+    .about-section .section-content .about-image-wrapper .about-image{
+        width: 90%;
+        height: 250px;
+        margin: 30px auto;
+    }
+    .about-section .section-content .about-details {
+        width: 90%;
+        margin: -80px auto 0;
+    }
+}
+@media screen and (max-width: 600px){
+    .about-section .section-content .about-image-wrapper .about-image{
+        width: 150px;
+        height: 190px;
+        margin: 30px auto;
+    }
+    .about-section .section-content .about-details {
+        width: 90%;
+        margin: -50px auto 0;
+    }
+    
+}
 .section-content .about-details .details p{
     font-size: var(--font-size-m);
     line-height: 40px;
     margin: 20px;
     text-align: left;
     font-family: monospace;
+}
+
+@media  screen and (max-width:900px){
+    .section-content .about-details .details p{
+        line-height: 30px;
+        margin: 10px;
+    }
+    
 }
 .section-content .about-details .details .typing-container{
     width: fit-content;
