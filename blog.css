@@ -92,6 +92,7 @@
 .blog-post-slider .slider-title {
     text-align: center;
     margin: 90px auto 30px;
+    font-family: 'Candal', sans-serif;
     font-weight: var(--font-weight-bold);
 }
 @media screen and (max-width: 900px){
