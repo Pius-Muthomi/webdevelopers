@@ -310,7 +310,7 @@ section.hero-section::after{
         width: 100%;
     }
     .hero-section .section-content .hero-image-wrapper img{
-        height: 480px;
+        height: 400px;
         width: 75%;
     }
     .section-content .hero-details .button {
@@ -497,9 +497,9 @@ section.hero-section::after{
     
 }
 @media screen and (max-width: 900px){
-.post-slider .post-wrapper .post .post-info {
+/* .post-slider .post-wrapper .post .post-info {
         height: 120px;
-    }
+    } */
     
 }
 .post .post-info .post-mini-info{
