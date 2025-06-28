@@ -1327,7 +1327,7 @@ footer.footer-section .section-content .copyright{
     flex-direction: column;
     /* text-align: center; */
     justify-content: center;
-    gap: 40px;
+    gap: 35px;
     position: relative;
 }
 .section-content .footer-column .footer-middle ul li a{
