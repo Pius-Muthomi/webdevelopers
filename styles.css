@@ -299,7 +299,7 @@ section.hero-section::after{
 }
 @media screen and (max-width: 750px) {
     section.hero-section {
-        height: 130vh;
+        height: 135vh;
     }
     .hero-section .section-content{
         flex-direction: column;
@@ -313,8 +313,8 @@ section.hero-section::after{
         width: 100%;
     }
     .hero-section .section-content .hero-image-wrapper img{
-        height: 270px;
-        width: 70%;
+        height: 480px;
+        width: 75%;
     
 }
 }
