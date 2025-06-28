@@ -57,7 +57,107 @@
     font-family: 'Candal', sans-serif;
 }
 
+/* post slider################################ */
+.blog-post-slider {
+    position: relative;
+    margin-bottom: 30px;
+}
+.blog-post-slider .post-wrapper {
+    /* border: 1px solid green; */
+    height:350px;
+    width:84%;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+@media screen and (max-width: 900px){
+    .blog-post-slider .post-wrapper {
+        height: 300px;
+    }
+    
+}
+.blog-post-slider .post-wrapper .post {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 330px;
+    margin: 0px 10px;
+    background-color: rgb(144, 144, 197);
+    box-shadow: 1rem 1rem 1rem -1rem;
+}
+.blog-post-slider .post-wrapper .post:hover {
+    box-shadow: 1rem 1rem 1rem -1rem rgb(51, 1, 1);
+    filter: brightness(1.3);
+}
+.blog-post-slider .slider-title {
+    text-align: center;
+    margin: 90px auto 30px;
+    font-weight: var(--font-weight-bold);
+}
+@media screen and (max-width: 900px){
+    .blog-post-slider .slider-title{
+        font-size: 1.2rem;
+        margin: 20px auto;
+    }
+    
+}
+.blog-post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    cursor: pointer;
+    font-size: 2em;
+    color: rgb(168, 151, 50);
+}
 
+.blog-post-slider .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    cursor: pointer;
+    font-size: 2em;
+    color: rgb(168, 151, 50);
+}
+@media screen and (max-width: 900px) {
+    .blog-post-slider .prev {
+        top: 50%;
+        left: 3px;
+        font-size: 1.3em;
+    }
+    .blog-post-slider .next {
+        top: 50%;
+        right: 3px;
+        font-size: 1.3em;
+    }
+}
+.blog-post-slider .pointer:hover{
+     color: rgba(214, 186, 24, 0.945);
+}
+.blog-post-slider .post-wrapper .post .slider-img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+@media screen and (max-width: 900px){
+    .blog-post-slider .post-wrapper .post .slider-img {
+        height: 180px;
+    }
+    
+}
+.blog-post-slider .post-wrapper .post .post-info {
+    height: 130px;
+    /* border: 1px solid grey; */
+    padding: 0px 10px;
+    
+}
+@media screen and (max-width: 900px){
+.blog-post-slider .post-wrapper .post .post-info {
+        height: 120px;
+    }
+    
+}
 
 .post{
     width: 95%;
