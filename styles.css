@@ -1693,8 +1693,10 @@ body.show-mobile-menu .navbar .nav-menu {
     margin: 0px auto;
     bottom: 0;
 }
-
-
+.section-content .footer-column .footer-middle ul li a {
+    font-size: 0.7rem;
+}
+}
 @media  screen and (max-width:500px) {
     .section-content .footer-column .footer-middle ul {
         gap: 10px;
