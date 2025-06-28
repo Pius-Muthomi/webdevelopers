@@ -160,6 +160,32 @@
     
 }
 
+
+.blog-post-slider .post-info h4 a {
+    color: black;
+    font-family: "Candal", sans-serif;
+}
+.blog-post-slider .post-info h4 a:hover {
+    color: rgb(92, 90, 90);
+    font-family: "Candal", sans-serif;
+}
+.blog-post-slider .post-info span{
+    font-family: "Lora", sans-serif;
+    margin-bottom:  5px;
+}
+.blog-post-slider .post-info .author-date{
+    display: flex;
+}
+.blog-post-slider .post-info .author-date span{
+    font-style: italic;
+}
+@media screen and (max-width: 900px){
+    .blog-post-slider .post-info .author-date{
+        display: block;
+    }
+}
+/* ////////////////////////////////////// */
+
 .post{
     width: 95%;
     height: 270px;
@@ -329,9 +355,11 @@
     float: right;
     width: 100%;
 }
+
 .post-preview .author-date{
     display: block;
 }
+
 .post .post-preview h2{
     font-size: 1.13rem;
     margin-top: 0;
