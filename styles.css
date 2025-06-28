@@ -226,9 +226,6 @@ section.hero-section::after{
     justify-content: center;
     padding: 80px;
 }
-
-
-
 .hero-section .section-content .hero-image-wrapper img{
      width: 100%;
     height: 520px;
@@ -315,8 +312,11 @@ section.hero-section::after{
     .hero-section .section-content .hero-image-wrapper img{
         height: 480px;
         width: 75%;
-    
-}
+    }
+    .section-content .hero-details .button {
+        padding: 10px 14px;
+        font-size: 0.9em;    
+    }
 }
 /* PROFILE QUOTE */
 .profile-quote{
@@ -1255,7 +1255,7 @@ span#msg{
     height: 100%;
 }
 
-/* FOOTER SECTION */
+/* FOOTER SECTION *//* FOOTER SECTION *//* FOOTER SECTION *//* FOOTER SECTION *//* FOOTER SECTION */
 
 footer{
     background: var(--primary-color);
@@ -1464,7 +1464,7 @@ body.show-mobile-menu .menu-overlay {
     width: 300px;            
 }
 .navbar{
-    padding: 6px 15px;
+    padding: 10px 15px;
 }
 
 .navbar .nav-menu .nav-link{
@@ -1616,20 +1616,21 @@ body.show-mobile-menu .navbar .nav-menu {
 }
 /* ABOUT PAGE *//* ABOUT PAGE *//* ABOUT PAGE *//* ABOUT PAGE *//* ABOUT PAGE */
 
-@media screen and (max-width:650px){
-    
 
-}
 
 @media screen and (max-width:650px){
 .portfolio .portfolio-content .worklist {
     grid-template-columns: repeat(1, 1fr);
 }
 /* SLIDER HOME */
-@media screen and (max-width:650px){
 
-}
 /* Footer */
+.footer-section .section-content .footer-column{
+    padding: 4px 0;
+    
+    
+} 
+
 .footer-section .section-content .footer-column{
     display: flex;
     flex-direction: column;
@@ -1645,7 +1646,10 @@ body.show-mobile-menu .navbar .nav-menu {
     /* text-align: center; */
     margin-bottom: 15px;
 }
+.footer-left .contacts p{
+    margin-bottom: 10px;
 
+}
 .section-content .footer-column .footer-middle ul{
     display: flex;
     flex-direction: row;
