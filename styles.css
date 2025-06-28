@@ -291,7 +291,10 @@ section.hero-section::after{
     height: 300px;
      }
      .hero-details .socials{
-        padding: 20px 80px;
+        padding: 30px 0px 20px;
+     }
+     .hero-details .socials .social-link{
+        font-size: 1.55rem;
      }
 }
 @media screen and (max-width: 750px) {
@@ -310,7 +313,7 @@ section.hero-section::after{
         width: 100%;
     }
     .hero-section .section-content .hero-image-wrapper img{
-        height: 260px;
+        height: 270px;
         width: 70%;
     
 }
