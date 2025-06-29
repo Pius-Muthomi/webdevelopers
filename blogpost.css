@@ -14,11 +14,16 @@ body {
 }
 
 .content{
+    display: flex;
     width: 90%;
-    margin: 30px auto 30px;
+    margin: 150px auto 30px;
 }
 .content .main-content{
-    width: 70%;
+    width: 75%;
+}
+
+.content .sidebar{
+    width: 25%;
 }
 
 
@@ -36,17 +41,17 @@ body {
    
 }
 
-.content .main-content .post p{
+.content .main-content .post p {
     color: black;
     text-align: left;
     padding: 8px 25px;
-    font-size: 16px;
-    line-height: 1.8;
-    margin-top: 30px;
-    font-family: "Roboto", sans-serif;
-    font-size: 17px;
-    line-height: 59px;
-    letter-spacing: -0.03em;
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    line-height: 3;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    /* font-size: 17px; */
+    /* letter-spacing: -0.03em; */
 }
 
 .content .main-content .sidebar{
@@ -55,7 +60,11 @@ body {
 
 .content .main-content .title{
     text-align: center;
+    
 
+}
+.sidebar .popular-topics{
+    margin-top: 128px;
 }
 .sidebar .popular-topics .topic{
     display: flex;
@@ -91,25 +100,8 @@ body {
 }
 .sidebar .popular-topics .title{
     text-align: center;
+    font-style: italic;
 }
-
-@media screen and (max-width:900px){
-/* .content {
-    width: 100%;
-    padding-top: 120px;
-    margin: 0;
-}
-.content .main-content{
-    width: 100%;
-}
-.content .main-content .post{
-    width: 100%;
-} */
-
-}
-
-
-
 /* BLOG POST IMAGES STYLING */
 .main-content .post .post-image {
     display: flex;
@@ -125,12 +117,40 @@ body {
     border-radius: 0;
     margin-top: 5px;
 }
-.main-content .post #img2 img{
+.main-content .post #img2 img {
     float: left;
-    width: 300px;
-    height: 185px;
+    width: 49%;
+    height: 226px;
     object-fit: cover;
     margin: 0 7px 0 25px;
     border-radius: 0;
+}
+/* RESPOSNIVE BLOG POST */
+@media screen and (max-width:900px){
+ .content {
+    flex-direction: column ;
+    width: 100%;
+    padding-top: 120px;
+    margin: 0;
+} 
+.content .main-content{
+    width: 100%;
+}
+.content .main-content .post{
+    width: 99%;
+} 
+.main-content .post .post-image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 2px
+}
+.content .sidebar{
+    width: 100%;
+}
+.sidebar .popular-topics {
+    margin-top: 0px;
+}
+
 
 }

@@ -1464,7 +1464,9 @@ body.show-mobile-menu .menu-overlay {
     display: flex;
     flex-direction: column;
     padding-top: 100px;
-    width: 300px;            
+    width: 214px;
+     align-items: flex-start;
+     padding-left: 55px;           
 }
 .navbar{
     padding: 10px 15px;
