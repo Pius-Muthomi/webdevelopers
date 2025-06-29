@@ -94,10 +94,17 @@ body {
 }
 
 @media screen and (max-width:900px){
-
+/* .content {
+    width: 100%;
+    padding-top: 120px;
+    margin: 0;
+}
 .content .main-content{
     width: 100%;
 }
+.content .main-content .post{
+    width: 100%;
+} */
 
 }
 
@@ -127,5 +134,3 @@ body {
     border-radius: 0;
 
 }
-
-font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;

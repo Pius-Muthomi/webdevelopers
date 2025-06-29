@@ -195,7 +195,19 @@
     border-radius: 8px;
     /* border: 1px solid green; */
 }
-
+@media screen and (max-width: 900px){
+    .content {
+    width: 98%;
+    /* border: 1px solid green; */
+    padding-top: 30px;
+    margin: 0 auto;
+    }
+    .post{
+        height: 220px;
+        width: 100%;
+    }
+    
+}
 .post img{
     width: 40%;
     height: 100%;
@@ -312,38 +324,44 @@
 }
 
 @media screen and (max-width:900px){
+.content .main-content .title {
+    text-align: center;
+    font-size: 1.7em;
+   
+}
 .content .main-content{
     width: 100%;
     /* float: left; */
     /* border: 1px solid red; */
 }
-
+.post .post-preview h2 a {
+    font-size: 0.8em;
+}
 .content .sidebar{
     width: 100%;
-    height: 90%;
-    padding: 0 14px 0 14px;
-    /* float: right; */
-    /* border: 1px solid blue; */
-    background-color:#f3f3f3;
+    padding: 0 14px 25px 14px;
 }
 
 .content .sidebar h2{
-    font-size: 1.8em;
+    font-size: 1.3em;
 }
 }
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:650px){
 .main-content .title h1{
-    font-size: 1.9em;
+    font-size: 1.7em;
     
 }
+.content .main-content .title {
+        text-align: center;
+        font-size: 1.5em;}
 .post{
-        height: 500px;
+        height: 410px;
     }
 .post img{
     width: 100%;
-    height: 50%;
+    height: 38%;
     object-fit: cover;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
@@ -367,8 +385,8 @@
 .post .post-preview .btn{
     background: var(--secondary-color);
     color: black;
-    padding: 0.2rem 1rem;
-    border-radius: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.7rem;
     font-family: "Lora", sans-serif;
     border: 2px solid black;
     box-shadow: 1px 4px 99px rgb(51, 1, 1);
@@ -376,5 +394,10 @@
     bottom: 10px;
     right: 10px;
 }
-
+.content .sidebar h2 {
+        font-size: 1.15em;
+    }
+.sidebar .section-topics li a {
+    padding: 8px 0px;
+}
 }
