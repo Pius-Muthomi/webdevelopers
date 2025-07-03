@@ -81,7 +81,7 @@ document.getElementById("copyright").innerHTML = `&copy; ${year} Muthomi. All ri
 $('.post-wrapper, .blog-post-wrapper').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  // autoplay: true,
+  autoplay: true,
   autoplaySpeed: 3000,
   nextArrow: $('.next'),
   prevArrow: $('.prev'),
@@ -133,7 +133,7 @@ function typeCharacter (){
             typingHomeTextElement.textContent = '';
           value = 0;
             typeCharacter();
-        }, 15000000); // 2000 ms = 2 seconds delay before restarting
+        }, 10000); // 2000 ms = 2 seconds delay before restarting
     }
 }
 
