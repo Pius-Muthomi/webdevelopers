@@ -94,12 +94,13 @@ body {
 .sidebar .popular-topics .topic .section-content p{
     margin-top: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 3;
-    font-size: 16px;
+    line-height: 1.5;
+    font-size: 15px;
 }
 
  .topic .section-content p a{
     color: black;
+    
 }
 
 .sidebar .popular-topics .topic .section-image img{
@@ -110,6 +111,16 @@ body {
 .sidebar .popular-topics .title{
     text-align: center;
     font-style: italic;
+}
+.sidebar .section-topics ul li a{
+    color: black ; 
+}
+.sidebar .section-topics ul li a:hover{
+    color: hsla(0, 0%, 0%, 0.651) ; 
+}
+.sidebar .section-topics ul li{
+    color: black ;
+    border-bottom: 1px solid  gray ;
 }
 /* BLOG POST IMAGES STYLING */
 .main-content .post .post-image {
@@ -150,7 +161,7 @@ blockquote{
  .content {
     flex-direction: column ;
     width: 100%;
-    padding-top: 120px;
+    padding-top: 45px;
     margin: 0;
 } 
 .content .main-content{
@@ -159,9 +170,12 @@ blockquote{
 .content .main-content .post{
     width: 99%;
 } 
+.content .main-content .post p {
+    line-height: 2.5;
+}
 .main-content .post .post-image img{
-    width: 100%;
-    height: 300px;
+    width: 90%;
+    height: 240px;
     object-fit: cover;
     margin-top: 2px
 }
