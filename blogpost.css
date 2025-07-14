@@ -188,6 +188,10 @@ blockquote{
 
 .sidebar .section-topics{
     margin: 0 8px;
+} 
+blockquote{
+    font-size: 0.8em;
+    padding: 0.7em;
 }
 
 
