@@ -138,3 +138,27 @@ function typeCharacter (){
 }
 
 window.onload = typeCharacter;
+
+
+// EMBEDDING WHATSAPP LINK IN THE WEBSITE// ////////// /////////// /////////// //////
+
+// ////////WHATSAPP///////////////
+// //////////////////////////////////
+
+document.addEventListener('DOMContentLoaded', function(){
+  const whatsAppLink = document.querySelector('.socials .social-link[href]');
+
+  const phoneNumber = '254794886201';
+
+  const whatsAppMessage = encodeURIComponent("Hello Pius! %0AI came across your portfolio and wanted to reach out");
+
+  const whatsAppURL = `https://wa.me/${phoneNumber}?text=${whatsAppMessage}`;
+
+
+  if(whatsAppLink){
+    whatsAppLink.setAttribute('href',whatsAppURL);
+    whatsAppLink.setAttribute('target', '_blank');
+  }
+
+})
+
