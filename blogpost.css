@@ -68,12 +68,12 @@ body {
     text-align: center;
 
 }
-.main-content .post .post-meta { 
-    color: #d13131;
+.main-content .post .post-meta p{ 
+    color: #0000009e;
     font-size: 0.8em;
 }
 .sidebar .popular-topics{
-    margin-top: 128px;
+    /* margin-top: 128px; */
 }
 .sidebar .popular-topics .topic{
     display: flex;
@@ -120,20 +120,31 @@ body {
 .main-content .post .post-image img{
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 95%;
     height: 350px;
     object-fit: cover;
     border-radius: 0;
     margin-top: 5px;
 }
-.main-content .post #img2 img {
+/* .main-content .post #img2 img {
     float: left;
     width: 49%;
     height: 226px;
     object-fit: cover;
     margin: 0 7px 0 25px;
     border-radius: 0;
+} */
+
+blockquote{
+    background: #80e27e38;
+    color: #333;
+    margin: 8px 25px;
+    padding: 1em;
+    border-left: 2px solid gray;
+    font-style: italic;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+    
 /* RESPOSNIVE BLOG POST */
 @media screen and (max-width:900px){
  .content {
