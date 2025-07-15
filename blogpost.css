@@ -72,9 +72,7 @@ body {
     color: #0000009e;
     font-size: 0.8em;
 }
-.sidebar .popular-topics{
-    /* margin-top: 128px; */
-}
+
 .sidebar .popular-topics .topic{
     display: flex;
     flex-direction: column;
@@ -187,7 +185,8 @@ blockquote{
     margin-top: 2px
 }
 .content .sidebar{
-    width: 100%;
+        width: 60%;
+        margin: 0 auto;
 }
 .sidebar .popular-topics {
     margin-top: 0px;
