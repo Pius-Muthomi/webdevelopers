@@ -134,7 +134,7 @@ body {
     width: 95%;
     height: 350px;
     object-fit: cover;
-    border-radius: 0;
+    border-radius: 5px;
     margin-top: 5px;
 }
 /* .main-content .post #img2 img {
@@ -154,6 +154,7 @@ blockquote{
     border-left: 2px solid gray;
     font-style: italic;
     box-shadow: 0 4px 10px 6px rgb(0 0 0 / 35%);
+    border-radius: 3px;
 }
     
 /* RESPOSNIVE BLOG POST */
