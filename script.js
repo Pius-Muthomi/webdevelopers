@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   const phoneNumber = '254794886201';
 
-  const whatsAppMessage = encodeURIComponent("Hello Pius! %0AI came across your portfolio and wanted to reach out");
+  const whatsAppMessage = encodeURIComponent("Hello Pius!\n\nI came across your portfolio and wanted to reach out.");
 
   const whatsAppURL = `https://wa.me/${phoneNumber}?text=${whatsAppMessage}`;
 
