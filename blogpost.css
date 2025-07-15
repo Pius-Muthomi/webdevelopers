@@ -153,7 +153,7 @@ blockquote{
     padding: 1em;
     border-left: 2px solid gray;
     font-style: italic;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px 6px rgb(0 0 0 / 35%);
 }
     
 /* RESPOSNIVE BLOG POST */
