@@ -158,6 +158,11 @@ blockquote{
     
 /* RESPOSNIVE BLOG POST */
 @media screen and (max-width:900px){
+    
+.content .main-content .title{
+    font-size: 1.5em;
+
+}
  .content {
     flex-direction: column ;
     width: 100%;
@@ -172,6 +177,7 @@ blockquote{
 } 
 .content .main-content .post p {
     line-height: 2;
+    padding: 8px 8px;
 }
 .main-content .post .post-image img{
     width: 90%;
