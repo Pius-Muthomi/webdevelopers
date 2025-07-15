@@ -185,7 +185,7 @@ blockquote{
     margin-top: 2px
 }
 .content .sidebar{
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
 }
 .sidebar .popular-topics {
@@ -195,11 +195,31 @@ blockquote{
 .sidebar .section-topics{
     margin: 0 8px;
 } 
+
+.section-topics h2.title{
+    text-align: center;
+}
+.section-topics h2.title::after{
+        content: '';
+        display: block;
+        margin: -15px auto 0;
+        background: #3cc826;
+        height: 2px;
+        width: 21%;
+        border-radius: 2px;
+        animation: underLineAfter 2s ease-out infinite alternate;
+}
 blockquote{
     font-size: 0.8em;
     padding: 0.7em;
     margin: 8px 8px;
 }
 
+.section-content {
+    line-height: 1.5;
+}
+.sidebar .popular-topics .topic .section-image img {
+    height: 160px;
 
+}
 }
