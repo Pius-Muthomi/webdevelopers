@@ -242,12 +242,14 @@
 }
 .post-preview .author-date{
     display: flex;
+    margin: 5px 0;
 }
 .post-preview .author-date span{
     font-style: italic;
 }
 .post .post-preview .preview-text{
     font-family: "Lora", sans-serif;
+    line-height: 1.8;
 }
 .post .post-preview .btn{
     background: var(--secondary-color);
