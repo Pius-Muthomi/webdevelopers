@@ -1,6 +1,17 @@
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => { 
+  const storedTasks = JSON.parse(localStorage.getItem('tasks'));
+
+  if (storedTasks){
+    storedTasks.forEach((task) => tasks.push(task));
+    updateTaskList();
+  }
+});
   let tasks = [];
+
+  const saveTasks = () => {
+    localStorage.setItem('tasks', JSON.stringify(tasks))
+  }
 
   const taskInput = document.getElementById('taskInput');
   const taskList = document.getElementById('task-list');
@@ -13,15 +24,24 @@ document.addEventListener('DOMContentLoaded', () => {
     tasks.push({ text, completed: false });
     taskInput.value = '';
     updateTaskList();
+    updateStats();
+    saveTasks();
   };
 
   const toggleTaskComplete = (index) => {
     tasks[index].completed = !tasks[index].completed;
     updateTaskList();
+    updateStats();
+    saveTasks();
   };
+
+
+
 const deleteTask = (index) =>{
     tasks.splice(index, 1);
     updateTaskList();
+    updateStats();
+    saveTasks();
 }
 
 const editTask = (index)=>{
@@ -29,7 +49,19 @@ const editTask = (index)=>{
 
     tasks.splice(index, 1);
     updateTaskList();
+    updateStats();
+    saveTasks();
 
+}
+
+const updateStats = () => {
+  const completeTasks = tasks.filter(task => task.completed).length
+  const totalTasks = tasks.length;
+  const progress = (completeTasks/totalTasks) *100;
+  const progressBar = document.getElementById('progress');
+  progressBar.style.width =`${progress}%`;
+
+  document.getElementById('numbers').innerText = `${completeTasks} / ${totalTasks}`
 }
 
   const updateTaskList = () => {
@@ -66,5 +98,5 @@ const editTask = (index)=>{
     e.preventDefault();
     addTask();
   });
-});
+
 
