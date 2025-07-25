@@ -61,7 +61,10 @@ body {
 }
 
 .content .main-content .post em {
+    text-align: left;
     margin-left: 25px;
+    line-height: 2;
+    font-size: 13px;
 }
 
 .content .main-content .sidebar{
@@ -129,6 +132,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
 }
 .main-content .post .post-image img{
     display: block;
