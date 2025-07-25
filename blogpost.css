@@ -60,6 +60,10 @@ body {
     /* letter-spacing: -0.03em; */
 }
 
+.content .main-content .post em {
+    margin-left: 25px;
+}
+
 .content .main-content .sidebar{
     width: 30%;
 }
