@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="apps.css">
     <!-- Font AWESOME CDN LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
@@ -57,104 +58,30 @@
 <!-- OVERLAY -->
 <div class="menu-overlay"></div>
 <!-- OVERLAY -->
-     <!-- Hero section -->
-<section class="hero-section">
-        <div class="section-content">
-            <div class="hero-details">
-                <p class="salutation">Hello,</p>
-                <h1 class="name"><i>My name is</i> Muthomi Pius</h1>
-                <h3 class="profession">Web Developer/Designer</h3>
-                <p class="location">From Kenya</p>
-                <div class="buttons">
-                    <a href="contact.html" class="button contact-me">Contact Me</a>
-                </div>
-                <div class="socials">
-                    <a href="#" class="social-link" style="color: #25D366;"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="" class="social-link"><i class="fa-brands fa-facebook" style="color: #1877F2;"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands fa-instagram" style="background-color: #E4405F; background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4); border-radius: 5px;"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands fa-linkedin" style="color: #0A66C2;"></i></a>
-                    <a href="#" class="social-link" style="color: #1DA1F2 ;"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="hero-image-wrapper">
-                <img src="images/People/WhatsApp Image 2025-03-28 at 14.15.50_b20f41c5.jpg" alt="Pius Muthomi" class="hero-image">
-            </div>
-        </div>
-      </section>
-<!-- EMPTY DIV -->
-<div class="profile-quote">
-    <p><i class="fa-solid fa-quote-left"></i>&nbsp;I'm Muthomi Pius, a <strong>Nurse, Web Developer,</strong> and <strong>Designer</strong>. 
-        I create innovative tech solutions that connect people around the world with your brand.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-</div>
- <!-- SUMMARY OF PROJECTS IN A SLIDING CAROUSEL -->
-	 <!-- Post Slider -->
-<div class="post-slider">
-            <h2 class="slider-title" style="font-style: italic ;"><i class="fa-solid fa-quote-left"></i>&nbsp;Having fun crafting digital experiences&nbsp;<i class="fa-solid fa-quote-right"></i></h2>
-            <i class="fas fa-chevron-left prev pointer"></i>
-            <i class="fas fa-chevron-right next pointer"></i>
-            <div class="post-wrapper">   
-                <div class="post">
-                    <img src="images/Carousel/photo-1509100194014-d49809396daa.avif" class="slider-img">
-                    <div class="post-info">
-                        <h4><a href="post.html" target="_blank">Track menstrual cycles, symptoms, and fertility windows</a></h4>
-                    
-                    </div>
-                </div>
-                <div class="post">
-                    <img src="images/Carousel/GudwYf-XIAABaTr.jpeg" class="slider-img">
-                    <div class="post-info">
-                        <h4><a href="webApps/converter.html" target="_blank">Get simple arithmetic converters to make your calculations easier</a></h4>
-                    
-                    </div>
-                </div>
 
-                <div class="post">
-                    <img src="images/Carousel/photo-1541793647037-86afaddc1cf0.avif" class="slider-img">
-                    <div class="post-info">
-                        <h4><a href="webApps/to-do-list.html" target="_blank">To-do List Application</a></h4>
-                        
-                    </div>
-                </div>
+<!-- TEMP CONVERSION SCALE -->
+<section>
+ <h1>Simple Arithmetic Calculators</h1>
+    <form>
+        <h2>Temperature Scale Converter</h2>
+        <input type="number" value="0" id="tempInput"> <br>
 
-                <div class="post">
-                    <img src="images/Carousel/premium_photo-1669809948017-518b5d800d73.avif" class="slider-img">
-                    <div class="post-info">
-                        <h4><a href="single.html" target="_blank">One day your life will flash before your eyes</a></h4>
-                        
-                    </div>
-                </div>
+        <input type="radio" id="toFahrenheit" name="unit">
+        <label for="toFahrenheit">°Celcius ➡ °Fahrenheit</label> <br>
 
-                <div class="post">
-                    <img src="images/Carousel/premium_photo-1678567672060-fb4eb9e6a004.avif" class="slider-img">
-                    <div class="post-info">
-                        <h4><a href="webApps/calculator.html" target="_blank">Calculator: Handle basic operations with real-time input validation</a></h4>
-                        
-                       
-                    </div>
-                </div>
+        <input type="radio" id="toCelcius" name="unit">
+        <label for="toCelcius">°Fahrenheit ➡ °Celcius</label> <br>
+        
+        <button type="button" onclick="convertTemp()">Convert</button> <br>
 
-                <div class="post">
-                    <img src="images/Carousel/photo-1595675024853-0f3ec9098ac7.avif" class="slider-img">
-                    <div class="post-info">
-                        <h4><a href="single.html" target="_blank">Dynamic Interfaces and interactive features with JavaScript</a></h4>
-                        
-                    </div>
-                </div>           
-        </div>
-</div>
-
-<!-- Get IN TOUCH -->
- <div class="home-contacts">
-    <div><p>At <strong>☕<span>Mut</span>Homi</strong></p></div>
-    <div><h3>Get access to user friendly websites</h3></div>
-    <div><p id="home-contact-quote"></p></div>
-    <button class="button-85"><a href="contact.html">GET IN TOUCH</a></button>
- </div>
-
-    
+        <p id="tempResult"></p>
+    </form>
+</section>
 
           <!-- FOOTER SECTION -->
- <footer class="footer-section">
+
+
+ <!-- <footer class="footer-section">
     <div class="section-content">
         <div class="footer-column">
         <div class="footer-left">
@@ -229,7 +156,7 @@
         </div>
     </div>
 </footer>
-
+ -->
 
 
 <!-- SLIDING CAROUSEL -->
@@ -242,8 +169,8 @@
 
 
 <!-- CUSTOM SCRIPT -->
-
-<script src="script.js"></script>
+<script src="apps.js"></script>
+<script src="../script.js"></script>
 
 <!-- JQuery -->
 
