@@ -45,8 +45,26 @@ function calcBMI(){
         
     }
     else{
+        
         BMI = weight/(height*height);
+
+        if(BMI < 18.5) {
         BMIresult.textContent = `BMI = ${BMI.toFixed(1)}`
+        BMIresult.style.color = '#3fa9f5';
+        }
+        else if(BMI < 25){
+        BMIresult.textContent = `BMI = ${BMI.toFixed(1)}`
+        BMIresult.style.color = '#4caf50';
+        }
+        else if(BMI < 30){
+        BMIresult.textContent = `BMI = ${BMI.toFixed(1)}`
+        BMIresult.style.color = '#ffb300';
+        }
+        else if(BMI >= 30){
+        BMIresult.textContent = `BMI = ${BMI.toFixed(1)}`
+        BMIresult.style.color = '#e53935';
+        }
+
     };
     // CALCULATE BMI
     
