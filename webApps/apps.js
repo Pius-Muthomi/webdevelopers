@@ -50,19 +50,19 @@ function calcBMI(){
 
         if(BMI < 18.5) {
         BMIresult.textContent = `BMI = ${BMI.toFixed(1)}`
-        BMIresult.style.color = '#3fa9f5';
+        BMIresult.style.background = '#3fa9f5';
         }
         else if(BMI < 25){
         BMIresult.textContent = `BMI = ${BMI.toFixed(1)}`
-        BMIresult.style.color = '#4caf50';
+        BMIresult.style.background = '#4caf50';
         }
         else if(BMI < 30){
         BMIresult.textContent = `BMI = ${BMI.toFixed(1)}`
-        BMIresult.style.color = '#ffb300';
+        BMIresult.style.background = '#ffb300';
         }
         else if(BMI >= 30){
         BMIresult.textContent = `BMI = ${BMI.toFixed(1)}`
-        BMIresult.style.color = '#e53935';
+        BMIresult.style.background = '#e53935';
         }
 
     };

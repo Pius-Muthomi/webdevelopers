@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 }
 section{ 
     height: 100vh;  
@@ -75,6 +76,7 @@ p{
 form.BMI .card{
    display: flex;
     justify-content: space-around;
+    
 }
 
  form.BMI .card label{
@@ -89,36 +91,41 @@ form.BMI .card{
     border-radius: 8px;
     font-size: 1.2em;
 }
-
-@media screen and (max-width:900px)  {
-    .card input{
-        width: 80%;
-        font-size: 1em;
-    }
-    form.BMI .btns{
-    font-size: 10px;
-}
-}
-
 form.BMI .btns{
     display: flex;
     gap: 20px;
     margin-left: 20px;
-    font-size: 15px;
+    
 }
+
+@media screen and (max-width:900px)  {
+    form{
+        width: 85%;
+    }
+    .card input{
+        width: 85%;
+        font-size: 1em;
+    }
+    form.BMI .btns button{
+    font-size: 10px;
+}
+}
+
 
 form.BMI .btns button{
     background-color: aquamarine;
 }
 #BMIresult{
     font-size: 18px;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
     
 }
 .appendices div{
     margin: 10px;
 }
 .appendices span{
-    font-size: 15px;
+    font-size: 10px;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 
 }
 
