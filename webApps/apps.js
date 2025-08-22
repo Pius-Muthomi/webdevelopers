@@ -41,7 +41,12 @@ function calcBMI(){
     
 
     if(!height || !weight || height <= 0 || weight <= 0){
-        window.alert('Please enter a valid height and weight');
+        BMIresult.textContent = 'Please enter a valid height and weight'
+        BMIresult.style.background = 'red'
+       setTimeout(()=>{
+        BMIresult.textContent = ''
+       }, 3000) 
+       
         
     }
     else{
