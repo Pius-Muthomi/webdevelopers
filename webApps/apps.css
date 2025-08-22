@@ -104,10 +104,10 @@ form.BMI .btns{
     }
     .card input{
         width: 85%;
-        font-size: 1em;
+        font-size: 1.1em;
     }
     form.BMI .btns button{
-    font-size: 10px;
+    font-size: 15px;
 }
 }
 
