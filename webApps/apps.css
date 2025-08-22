@@ -90,6 +90,16 @@ form.BMI .card{
     font-size: 1.2em;
 }
 
+@media screen and (max-width:900px)  {
+    .card input{
+        width: 80%;
+        font-size: 1em;
+    }
+    form.BMI .btns{
+    font-size: 10px;
+}
+}
+
 form.BMI .btns{
     display: flex;
     gap: 20px;
@@ -100,8 +110,15 @@ form.BMI .btns{
 form.BMI .btns button{
     background-color: aquamarine;
 }
-
+#BMIresult{
+    font-size: 18px;
+    
+}
+.appendices div{
+    margin: 10px;
+}
 .appendices span{
     font-size: 15px;
+
 }
 
