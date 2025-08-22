@@ -76,8 +76,32 @@
 
         <p id="tempResult"></p>
     </form>
+    <form action="" class="BMI">
+        <h2 class="">BMI calculator</h2>
+        <div class="card">
+            <div class="height">
+                <label for="height">Height(cm)</label> <br>
+                <input type="number" id="height" placeholder="e.g., 150">
+            </div>
+            <div class="weight">
+                <label for="weight">Weight(Kgs)</label> <br>
+                <input type="number" id="weight" placeholder="e.g., 57">
+            </div>
+        </div>
+        <div class="btns">
+            <button type="button" id="calcBtn" onclick="calcBMI()">Calculate</button>
+            <button type="button" id="resetBtn">Reset</button>
+        </div>
+        <p id="BMIresult"></p>
+        <div class="appendices">
+             <span><i class="fa-solid fa-circle-dot" style="color: var(--under);"></i> &lt;18.5 Under </span>
+             <span><i class="fa-solid fa-circle-dot" style="color: var(--normal);"></i> 18.5 - 24.9 Normal </span>
+             <span><i class="fa-solid fa-circle-dot" style="color: var(--over);"></i> 25 - 29.9 Over </span>
+             <span><i class="fa-solid fa-circle-dot" style="color: var(--obese);"></i> &ge;30 Obese </span>
+        </div>
+    </form>
 </section>
-
+<!-- BMI CALCULATOR -->
           <!-- FOOTER SECTION -->
 
 
