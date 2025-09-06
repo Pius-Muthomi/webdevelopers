@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.clock-container{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/backgrounds/jonathan-kim-46gkGRZhiXk-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+
+.clock{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+#clock-display{
+    backdrop-filter: blur(10px);
+    padding: 6px 35px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 6em;
+    font-weight: bold;
+    color: white; 
+}
+
+#clock-display span{
+    font-size: 15px;
+}
