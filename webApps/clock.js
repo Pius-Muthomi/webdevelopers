@@ -10,7 +10,7 @@ function updateTime (){
         clockDisplay.textContent = `${hours}:${minutes}:${seconds} AM`
     }
     else {
-        clockDisplay.textContent = `${hours}:${minutes}:${seconds} PM`
+        clockDisplay.textContent = `0${hours-12}:${minutes}:${seconds} PM`
     }
 
     

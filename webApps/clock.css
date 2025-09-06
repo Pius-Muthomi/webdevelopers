@@ -37,3 +37,15 @@ body{
 #clock-display span{
     font-size: 15px;
 }
+
+@media  screen and (max-width:900px) {
+    #clock-display{
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width:650px){
+    #clock-display{
+        font-size: 2em;
+    }
+}
