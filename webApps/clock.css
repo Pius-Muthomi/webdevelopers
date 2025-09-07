@@ -20,12 +20,15 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
     
     
 }
 
 #clock-display{
-    backdrop-filter: blur(10px);
+    box-shadow: 0 0.3px 0.7px rgb(0 0 0 / 13%), 0 0.9px 1.7px rgb(43 237 5), 0 1.8px 3.5px rgba(0, 0, 0, 0.224), 0 3.7px 7.3px rgba(0, 0, 0, 0.277), 0 10px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  transition: 0.5s ease;
     padding: 6px 35px;
     border-radius: 5px;
     font-family: monospace;
@@ -33,15 +36,47 @@ body{
     font-weight: bold;
     color: white; 
 }
-#date-display{
-    margin-top: 8px;
-    backdrop-filter: blur(10px);
-    padding: 6px 35px;
-    border-radius: 5px;
-    font-size: 2em;
+
+.calendar{
+    background-color: white;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgb(83 243 0 / 67%) -1px 3px 55px, rgba(0, 0, 0, 0.12) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 10px;
+}
+.calendar .month{
+    background-color: rgb(255 0 0);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
     color: white;
-    font-style: italic;
     font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.calendar .day{
+    color: gray;
+    padding: 12px;
+    font-size: 15px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    
+}
+
+.calendar .date{
+    font-size: 3em;
+    font-weight: bold;
+    padding: 15px;
+}
+.calendar .year{
+    color: gray;
+    padding: 12px;
+    font-size: 15px;
 
 }
 .stop-watch{
@@ -66,9 +101,7 @@ body{
         font-size: 5em;
     }
 
-    #date-display{
-        font-size:1.6em
-    }
+    
     .stop-watch #display{
         font-size: 4em;
         padding: 0.6rem 1.5rem;
@@ -102,11 +135,36 @@ button:hover{
 
 @media screen and (max-width:650px){
     #clock-display{
-        font-size: 2em;
+        font-size: 3em;
     }
-    #date-display{
-        font-size:0.7em
+
+    .calendar{
+        width: 200px;
     }
+    .calendar .month{
+
+    padding: 10px;
+    font-size: 25px;
+}
+
+.calendar .day{
+    color: gray;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.calendar .date{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0;
+}
+.calendar .year{
+    color: gray;
+    padding: 12px;
+    font-size: 15px;
+
+}
+    
     .stop-watch #display{
         font-size: 2em;
         

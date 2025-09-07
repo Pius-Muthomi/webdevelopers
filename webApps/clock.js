@@ -1,5 +1,4 @@
 const clockDisplay = document.getElementById('clock-display');
-const dateDisplay = document.getElementById('date-display');
 function updateTime (){
     const time = new Date();
     const hours = time.getHours().toString().padStart(2, 0);
@@ -18,19 +17,55 @@ function updateTime (){
 
 setInterval(updateTime, 1000);
 
-function updateDate () {
-    const date = new Date();
-    // const year = date.getFullYear();
-    // const month = date.getMonth() + 1;
-    // const day = date.getDate().toString().padStart(2, 0);
+// CREATING A DATE DISPLAY
+const month =  document.getElementById('monthEl');
+const day =  document.getElementById('dayEl');
+const dayNum =  document.getElementById('dayNum');
+const yearEl =  document.getElementById('yearEl');
 
-    const options = {
-        day: "numeric", month:"long", year:"numeric"
-    };
-    dateDisplay.textContent = date.toLocaleDateString("en-GB", options)
+
+function updateCalendar (){
+    const today = new Date();
+    
+
+    month.innerText = today.toLocaleString("en", {month: "long"});
+    day.innerText = today.toLocaleString("en", {weekday: "long"});
+    dayNum.innerText = today.getDate();
+    yearEl.innerText = today.getFullYear();
 }
 
-updateDate();
+updateCalendar();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function updateDate () {
+//     const date = new Date();
+//     // const year = date.getFullYear();
+//     // const month = date.getMonth() + 1;
+//     // const day = date.getDate().toString().padStart(2, 0);
+
+//     const options = {
+//         day: "numeric", month:"long", year:"numeric"
+//     };
+//     dateDisplay.textContent = date.toLocaleDateString("en-GB", options)
+// }
+
+// updateDate();
 
 
 // STOPWATCH JS SCRIPT
